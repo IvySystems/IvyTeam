@@ -1,0 +1,11 @@
+{
+  "icon": "appIcon.png",
+  "frame": false,
+  "height": 300,
+  "width": 520,
+  "webPreferences": {
+    "nodeIntegration": true,
+    "contextIsolation": false,
+    "enableRemoteModule": true
+  }
+}

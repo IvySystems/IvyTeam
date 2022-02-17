@@ -1,0 +1,36 @@
+{
+  "name": "IvyTeamV2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "IvySystems GmbH",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.0.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.6.5",
+    "jquery": "^3.6.0"
+  },
+  "build": {
+    "appId": "com.github.iffy.electronupdaterexample",
+    "afterSign": "./build/notarize.js",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false
+    },
+    "linux": {
+      "category": "your.app.category.type",
+      "target": "AppImage"
+    }
+  }
+}

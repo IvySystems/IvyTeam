@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>var $ = require('jquery');</script>
+
+    <link rel="stylesheet" href="../../vendor/style/ivy-pb.css">
+    <link rel="stylesheet" href="../../vendor/libs/bootstrap/bootstrap.min.css">
+
+</head>
+<body class="ivy_pb_startup_body">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="ivy_pb_startup_title"><span class="ivy_pb_name"><split_ivy>Ivy</split_ivy><split_team>Team</split_team></span></p>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <div class="ivy_pb_startup_progress_bar">
+                    <div class="ivy_pb_progressbar" id="ivy-startup-progressbar">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-2">
+                <div class="ivy_pb_startup_progress_info">
+                    <p class="ivy_pb_startup_progress_info_text" id="ivy-startup-progress-text">Searching for updates....</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+
+    var {Startup} = require('./startup');
+    Startup.listenToUpdateStatus();
+
+</script>
+</html>
